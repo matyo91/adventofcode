@@ -1,4 +1,4 @@
-AAdvent of Code
+Advent of Code
 --------------
 
 More informations at https://adventofcode.com/
