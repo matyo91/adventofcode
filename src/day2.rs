@@ -47,3 +47,15 @@ pub fn solve_day2_part1(input: &Vec<Password>) -> usize {
         })
         .count()
 }
+
+#[aoc(day2, part2)]
+pub fn solve_day2_part2(input: &Vec<Password>) -> usize {
+    input
+        .iter()
+        .filter(|p| {
+            let firstmatch = p.password.chars().nth(p.min as usize - 1).unwrap_or(' ') == p.letter;
+            let secondmatch = p.password.chars().nth(p.max as usize - 1).unwrap_or(' ') == p.letter;
+            firstmatch ^ secondmatch
+        })
+        .count()
+}
