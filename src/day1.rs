@@ -1,5 +1,5 @@
 #[aoc(day1, part1)]
-pub fn solve_part1(input: &str) -> Option<u32> {
+pub fn solve_day1_part1(input: &str) -> Option<u32> {
     let lines = input.lines().into_iter();
 
     for p1 in lines.clone() {
@@ -16,7 +16,7 @@ pub fn solve_part1(input: &str) -> Option<u32> {
 }
 
 #[aoc(day1, part2)]
-pub fn solve_part2(input: &str) -> Option<u32> {
+pub fn solve_day1_part2(input: &str) -> Option<u32> {
     let lines = input.lines().into_iter();
 
     for p1 in lines.clone() {
